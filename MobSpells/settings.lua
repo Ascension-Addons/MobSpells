@@ -65,6 +65,7 @@ f:SetScript("OnEvent", function(_, _, a1)
         ColorPickerFrame.func = ColorPickerCallback
         ColorPickerFrame:Hide()
         ColorPickerFrame:Show()
+        ColorPickerFrame:SetFrameStrata("DIALOG")
       end)
       preview:EnableMouse(true)
 

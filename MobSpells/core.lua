@@ -10,6 +10,7 @@ function ARGB2HEX(a, r, g, b)
 end
 
 local function UpdateTooltip(self, info)
+  if UnitPlayerControlled("mouseover") then return end
   if MobSpellsCfg["showAbilitiesLabel"] then self:AddLine("|r|nAbilities:", 1, 1, 1) end
 
   local healing = MobSpellsCfg["colorHealing"]
